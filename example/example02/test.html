@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>背景渐变动画</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        .gradient-text {
+            font-size: 80px;
+            font-weight: bolder;
+            -webkit-background-clip: text;
+            background-image: linear-gradient(90deg, rgba(98, 201, 248, 0.6), rgba(243, 111, 255, 0.6), rgba(247, 129, 129, 0.6), rgba(241, 239, 104, 0.6), rgba(117, 226, 84, 0.6), rgba(98, 201, 248, 0.6));
+            background-size: 800%; /* 背景宽度设置为元素宽度的 8 倍 */
+            animation: gradient 15s infinite linear; /* 让背景渐变动画循环 */
+            color: transparent; /* 使文本本身透明 */
+            line-height: 100px;
+            text-align: center;
+        }
+
+        @keyframes gradient {
+            0% {
+                background-position: 0% 0%;
+            }
+            100% {
+                background-position: -800% 0%; /* 背景图像向左移动 800% */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="gradient-text">
+        动态渐变文字
+    </div>
+
+</body>
+</html>

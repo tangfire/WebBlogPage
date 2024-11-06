@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+        scroll-snap-type: y mandatory;  /* 启用垂直滚动快照 */
+        overflow: scroll;               /* 强制显示滚动条 */
+        overflow-x: hidden;             /* 禁用水平滚动 */
+        height: 100vh;                  /* 容器的高度为视口高度 */
+        scroll-behavior: smooth;  /* 让滚动更平滑 */
+        }
+
+        .section {
+        height: 100vh;                  /* 每个 section 占满整个视口高度 */
+        scroll-snap-align: start;       /* 每个 section 都对齐到滚动容器的起始位置 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3em;
+        color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <section class="section" style="background-color: lightcoral;">Section 1</section>
+        <section class="section" style="background-color: lightseagreen;">Section 2</section>
+        <section class="section" style="background-color: lightskyblue;">Section 3</section>
+        <section class="section" style="background-color: lightgoldenrodyellow;">Section 4</section>
+      </div>
+      
+    
+</body>
+</html>

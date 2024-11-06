@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow: Hidden 示例</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 200px; /* 限制容器的高度 */
+            overflow: hidden; /* 隐藏超出容器的内容 */
+            border: 2px solid #333; /* 为容器添加边框 */
+            padding: 10px;
+            background-color: #f0f0f0;
+        }
+
+        .content {
+            height: 400px; /* 内容超过容器高度 */
+            background-color: #d0e6f4;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="content">
+            这是一些内容，原本它应该会超出容器的高度，但由于设置了 `overflow: hidden;`，超出部分会被隐藏。
+        </div>
+    </div>
+
+</body>
+</html>

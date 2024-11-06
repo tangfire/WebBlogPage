@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example</title>
+    <style>
+        /* 按钮的初始样式 */
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50; /* 初始背景颜色：绿色 */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s; /* 设置背景颜色过渡效果 */
+        }
+
+        /* 鼠标悬停时的样式 */
+        .button:hover {
+            background-color: #45a049; /* 鼠标悬停时背景颜色变化：稍微深一点的绿色 */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 按钮元素 -->
+    <button class="button">悬停我！</button>
+
+</body>
+</html>

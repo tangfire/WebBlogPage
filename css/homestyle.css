@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+.titleimg{
+    background-image: url("../image/head.jpeg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 1540px;
+    background-attachment: fixed;
+    width: 100vw;
+    transition: 0.5s ease 0s;
+    animation: load 0.5s;
+}
+
+@keyframes load{
+    0%{
+        background-position-y: 50px;
+        opacity: 0;
+    }
+    100%{
+        background-position-y: 0px;
+        opacity: 1;
+    }
+}
+
+
+.titleimg .title{
+    width: 1540px;
+    padding: 200px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: rgba(49,70,87,0.9)
+}
+
+
+
+

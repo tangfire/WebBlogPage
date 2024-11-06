@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Position Example</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        
+        /* 固定在页面顶部的导航栏 */
+        nav {
+            position: fixed; /* 使元素固定在页面顶部 */
+            top: 0; /* 固定在页面顶部 */
+            left: 0;
+            width: 100%; /* 宽度为页面的100% */
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 18px;
+            z-index: 1000; /* 确保导航栏在其他内容之上 */
+        }
+
+        /* 页面内容 */
+        .content {
+            padding-top: 80px; /* 给内容加点上边距，以防导航栏遮挡 */
+            height: 2000px; /* 设置足够的高度，让页面能够滚动 */
+            background-color: #f4f4f4;
+            font-size: 20px;
+        }
+
+        /* 示例链接 */
+        .content p {
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- 固定的导航栏 -->
+    <nav>
+        固定顶部导航栏
+    </nav>
+
+    <!-- 页面内容 -->
+    <div class="content">
+        <p>滚动页面时，导航栏将始终固定在页面顶部。</p>
+        <p>你可以滚动页面，查看导航栏的位置如何保持固定。</p>
+        <p>继续滚动，体验固定定位的效果。</p>
+        <p>这里是一些页面内容，页面足够长，可以滚动。</p>
+        <p>继续滚动。</p>
+        <p>继续滚动，直到页面底部。</p>
+        <p>...</p>
+    </div>
+
+</body>
+</html>
