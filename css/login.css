@@ -1,0 +1,55 @@
+@charset "utf-8";
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    color: rgb(44,59,59);
+    overflow: hidden;
+}
+
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/loginback01.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transform: scale(1.05);
+
+}
+
+.back::before{
+    content: "";
+    width: 75%;
+    height: 75%;
+    backdrop-filter: blur(10px); 
+    position: fixed;
+
+}
+
+.back:hover::before{
+    backdrop-filter: none;
+}
+
+/* .log{
+    display: flex;
+    flex-direction: column;
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
