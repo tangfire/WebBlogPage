@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* 设置按钮的基础样式 */
+        .btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #3498db;  /* 初始背景颜色 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.5s 1s;  /* 过渡效果：0.5秒的变化，1秒的延迟 */
+        }
+
+        /* 鼠标悬停时按钮的样式变化 */
+        .btn:hover {
+            background-color: #2ecc71;  /* 鼠标悬停时背景颜色改变 */
+        }
+
+    </style>
+</head>
+<body>
+    <button class="btn">Hover Me!</button>
+</body>
+</html>

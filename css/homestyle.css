@@ -94,6 +94,38 @@
 }
 
 
+.pt .img:hover{
+    transform: scale(1.1);
+}
+
+
+.pt .txt{
+    height: 310px;
+    width: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+.pt .txt h1{
+    text-align: center;
+    font-size: 3em;
+    color: rgb(28, 44, 68);
+    height: 30px;
+    line-height: 30px;
+}
+
+.pt .txt p{
+    margin-top: -2px;
+    word-wrap: break-word;
+    color: rgb(114,182,202);
+}
+
+
+
+
+
 
 
 
