@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow Hidden Example</title>
+    <style>
+        /* 容器使用 imghid 类，裁剪图片溢出的部分 */
+        .imghid {
+            width: 300px;         /* 设置容器宽度 */
+            height: 200px;        /* 设置容器高度 */
+            overflow: hidden;     /* 超出容器的内容会被隐藏 */
+            border: 2px solid #333; /* 添加边框以便更好地看容器 */
+            position: relative;   /* 用于图片的定位 */
+        }
+
+        /* 图片设置较大的宽高以便演示溢出 */
+        .imghid img {
+            width: 400px;         /* 设置图片宽度大于容器 */
+            height: 300px;        /* 设置图片高度大于容器 */
+            object-fit: cover;    /* 确保图片填充容器 */
+            object-position: center; /* 让图片居中显示 */
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow Hidden Example</h1>
+    <!-- 使用 .imghid 类裁剪溢出部分 -->
+    <div class="imghid">
+        <img src="../../image/user.jpg" alt="Sample Image">
+    </div>
+</body>
+</html>
