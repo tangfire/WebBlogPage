@@ -6,6 +6,18 @@ window.onmousemove = function(event){
     back.style.backgroundPositionY = y+"px";
 }
 
+var account = document.getElementById('account');
+var password = document.getElementById('password');
+function login(){
+    if(account.value=="" || password.value ==""){
+        alert("账号或密码不能为空");
+        return false;
+    }else if(account.value != "root" || account.value!="root"){
+        alert("账号或密码错误(可以选择游客登录)");
+        return false;
+    }
+}
+
 
 
 var con = document.getElementById('con')

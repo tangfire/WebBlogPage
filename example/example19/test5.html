@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .subc{
+            margin-top: 100px;
+            margin-left: 100px;
+            background: red;
+            width: 100px;
+            height: 100px;
+            
+            animation: slip 3.6s linear;
+        }
+
+        .subc2{
+            margin-top: 100px;
+            background: rgb(37, 14, 211);
+            width: 100px;
+            height: 100px;
+            margin-left: 30px;
+            animation: slip2 3.6s linear;
+        }
+
+        @keyframes slip{
+            0%{
+                opacity: 0;
+            }
+            80%{
+                opacity: 0;
+                margin-top: 150px;
+            }
+
+            100%{
+                opacity: 1;
+            }
+
+
+        }
+
+        @keyframes slip2{
+       
+            80%{
+              
+                margin-top: 150px;
+            }
+
+        
+        }
+
+        .container{
+            display: flex;
+            position: fixed;
+            height: 500px;
+            width: 500px;
+            background: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="subc"></div>
+        <div class="subc2"></div>
+    </div>
+</body>
+</html>

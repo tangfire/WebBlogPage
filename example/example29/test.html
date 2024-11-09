@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        .box{
+            margin: auto;
+            margin-top: 200px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(34, 148, 171);
+            animation: a1 3s infinite linear;
+        }
+
+        @keyframes a1{
+            to{
+                transform: rotate(360deg);
+            }
+        }
+
+        .box::before{
+            content: "";
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border: 2px solid rgb(34, 148, 171);
+            transform: rotate(30deg);
+        }
+
+        .box::after{
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(34, 148, 171);
+            transform: rotate(60deg);
+        }
+
+
+        .box1{
+            margin: auto;
+            margin-top: 150px;
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(34, 148, 171);
+            animation: a1 3s infinite linear;
+        }
+
+        .box1::before{
+            content: "";
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border: 2px solid rgb(34, 148, 171);
+            transform: rotate(30deg);
+            animation: a2 25s infinite linear;
+
+        }
+
+        .box1::after{
+            content: "";
+            position: absolute;
+            height: 200px;
+            width: 200px;
+            border: 2px solid rgb(34, 148, 171);
+            transform: rotate(60deg);
+            animation: a2 60s infinite linear;
+        }
+
+        @keyframes a2{
+            to{
+                transform: rotate(-10800deg
+                );
+            }
+        }
+
+    </style>
+</head>
+<body>
+   
+    <div class="box"></div>
+    <div class="box1"></div>
+</body>
+</html>

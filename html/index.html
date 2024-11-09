@@ -11,7 +11,7 @@
     <div class="back" id="back">
         <div class="log">
             <div class="logtitle">LOGIN</div>
-            <form action="home.html" class="logbody">
+            <form action="home.html" class="logbody" onsubmit="return login()">
                 <input type="text" id="account" class="txt" placeholder="账户">
                 <br>
                 <input type="password" id="password" class="txt" value="" placeholder="密码">
@@ -33,6 +33,7 @@
 
         </div>
     </div>
+    
     <script src="../js/login.js"></script>
 </body>
 </html>

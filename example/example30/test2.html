@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .con {
+            display: flex;
+            flex-direction: column; /* 主轴为垂直方向，子元素会沿垂直方向排列 */
+            justify-content: center; /* 主轴对齐方式：垂直方向居中 */
+            align-items: center; /* 交叉轴对齐方式：水平方向居中 */
+            height: 300px; /* 给容器设置一个高度 */
+            background-color: lightgray; /* 背景色用于观察效果 */
+        }
+
+        .item {
+            padding: 20px;
+            background-color: lightgreen;
+            margin: 10px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      
+</body>
+</html>

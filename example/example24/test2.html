@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            
+        }
+
+        .container{
+            background: green;
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+        }
+
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            background: red;
+            float: left;
+        }
+
+        .box2{
+            height: 150px;
+            width: 150px;
+            background: orange;
+            float: left;
+        }
+
+        .box3{
+            height: 200px;
+            width: 200px;
+            background: blue;
+            float: left;
+        }
+
+        .container2{
+            background: rgb(179, 222, 24);
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            position: relative;
+        }
+
+
+        .box4{
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            float: left;
+            z-index: 3;
+        }
+
+        .box5{
+            height: 150px;
+            width: 150px;
+            background: orange;
+            position: absolute;
+            float: left;
+            z-index: 2;
+        }
+
+        .box6{
+            height: 200px;
+            width: 200px;
+            background: blue;
+            position: absolute;
+            float: left;
+            z-index: 1;
+        }
+
+        .container3{
+            background: rgb(206, 7, 183);
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            position: relative;
+        }
+        
+        .box7{
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: relative;
+            float: left;
+        }
+
+        .box8{
+            height: 150px;
+            width: 150px;
+            background: orange;
+            position: relative;
+            float: left;
+        }
+
+        .box9{
+            height: 200px;
+            width: 200px;
+            background: blue;
+            position: relative;
+            float: left;
+        }
+
+        .container4{
+            background: rgb(36, 120, 230);
+            height: 500px;
+            width: 500px;
+            border: 2px solid;
+            position: absolute;
+            top: 600px;
+            
+            
+        }
+
+
+        .box10{
+            height: 100px;
+            width: 100px;
+            background: red;
+            position: absolute;
+            float: left;
+            z-index: 3;
+        }
+
+        .box11{
+            height: 150px;
+            width: 150px;
+            background: orange;
+            position: absolute;
+            float: left;
+            z-index: 2;
+        }
+
+        .box12{
+            height: 200px;
+            width: 200px;
+            background: blue;
+            position: absolute;
+            float: left;
+            z-index: 1;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+    <div class="container2">
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+    </div>
+
+    <div class="container3">
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+    </div>
+
+    
+    <div class="container4">
+        <div class="box10"></div>
+        <div class="box11"></div>
+        <div class="box12"></div>
+    </div>
+</body>
+</html>

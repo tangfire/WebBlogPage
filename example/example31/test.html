@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ul1{
+            list-style: none;
+        }
+
+    
+
+        .icon{
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+            border-radius: 5px;
+            background-repeat: no-repeat;
+            background-position: center;
+            margin-left: 80px;
+            background-image: url("../../image/user.jpg");
+            transition: 0.4s ease 0s;
+
+        }
+
+
+
+        .icon ul{
+            display: none;
+            list-style: none;
+            width: 150px;
+            margin-left: 10px;
+            color: rgb(192, 5, 5);
+            font-size: 14px;
+            margin-left: -80px;
+            margin-top: 30px;
+        }
+
+        .icon:hover ul{
+            display: block;
+            position: absolute;
+
+        }
+
+        .icon:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ul1">
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
+
+    <div class="icon">
+        <ul>
+            <li>Hello,World</li>
+        </ul>
+    </div>
+    
+
+  
+</body>
+</html>

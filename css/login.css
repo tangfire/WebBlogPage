@@ -24,9 +24,9 @@ body{
 
 .back::before{
     content: "";
-    width: 75%;
-    height: 75%;
-    /* backdrop-filter: blur(10px);  */
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px); 
     position: fixed;
 
 }

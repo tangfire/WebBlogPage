@@ -4,11 +4,11 @@
     background-image: url("../image/head.jpeg");
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: 1540px;
+    background-size: 1700px;
     background-attachment: fixed;
     width: 100vw;
     transition: 0.5s ease 0s;
-    animation: load 0.5s;
+    animation: load 0.5s forwards;
 }
 
 @keyframes load{
@@ -17,7 +17,7 @@
         opacity: 0;
     }
     100%{
-        background-position-y: 0px;
+        background-position-y: -160px;
         opacity: 1;
     }
 }
@@ -56,8 +56,8 @@
     box-shadow: 0 0 15px rgb(59,73,95);
     border-radius: 15px;
     overflow: hidden;
-    /* scroll-snap-align: start;
-    transition: all 0.5s ease 0s; */
+    scroll-snap-align: start;
+    transition: all 0.5s ease 0s;
 }
 
 

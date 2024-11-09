@@ -101,5 +101,63 @@
     transition: 0.5s 1s;
 }
 
+.a2{
+    margin-left: 10%;
+    animation: a2load 3.6s linear;
+    transition: 0.5s;
+}
+
+.a3{
+    margin-left: 40%;
+    animation: a3load 4.8s linear;
+    transition: 0.5s;
+}
+
+.a3 h2{
+    margin-top: 100px;
+    line-height: 50px;
+}
+
+@keyframes a1load{
+    0%{
+        opacity: 0;
+    }
+    70%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 40px;
+    }
+}
+@keyframes a2load{
+    0%{
+        
+        opacity: 0;
+    }
+    80%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes a3load{
+    0%{
+        
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+        margin-top: 100px;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
 
 

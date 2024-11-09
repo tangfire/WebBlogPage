@@ -9,7 +9,7 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 1540px;
+    width: 1700px; 
     height: 70px;
     top: 0px;
     background-color: rgb(123,161,197);
@@ -82,11 +82,29 @@ nav .navanim{
 
 nav .home,a:nth-child(2):hover~.navanim{
     width: 120px;
-    left: 535px;
+    /* left: 535px; */
+    left: 605px;
  }
 
 
- 
+ nav .about,a:nth-child(3):hover~.navanim{
+    width: 120px;
+    left: 750px;
+}
+
+nav .blog,a:nth-child(4):hover~.navanim{
+    width: 120px;
+    left: 900px;
+}
+
+nav .album,a:nth-child(5):hover~.navanim{
+    width: 120px;
+    left: 1050px;
+}
+nav .join,a:nth-child(6):hover~.navanim{
+    width: 120px;
+    left: 1200px;
+}
 
 
 

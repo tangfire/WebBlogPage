@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+                * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        .container {
+        display: flex;
+        justify-content: center; /* 或者 space-around，根据不同的类名 */
+        align-items: center; /* 交叉轴居中 */
+        height: 200px; /* 高度设置为200px，便于观察效果 */
+        margin-bottom: 20px; /* 给两个容器之间添加一点间距 */
+        background-color: lightgray; /* 背景色 */
+        }
+
+        .container.space-around {
+        justify-content: space-around; /* 设置为space-around */
+        }
+
+        .item {
+        padding: 20px;
+        background-color: lightcoral;
+        margin: 10px;
+        text-align: center;
+        border-radius: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container center">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      
+      <div class="container space-around">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+      </div>
+      
+</body>
+</html>
